@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap" rel="stylesheet">
+
+<script src="functions.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css" media="all">
+
+</head>
+<body>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="background/bg1.JPG" style="width:100%">
+  
+    </div>
+
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="background/bg2.JPG" style="width:100%">
+  
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="background/bg3.JPG" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="background/bg4.JPG" style="width:100%">
+    </div>
+    
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="background/bg5.JPG" style="width:100%">
+  
+    </div>
+
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="background/bg6.JPG" style="width:100%">
+  
+    </div>
+    <div class="mySlides fade">
+      <img src="background/bg7.JPG" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="background/bg8.jpg" style="width:100%">
+    </div>
+    
+    </div>
+  <nav id="navbar" class="">
+    <div class="nav-wrapper">
+      <!-- Navbar Logo -->
+      <div class="logo">
+        <!-- Logo Placeholder for Illustration -->
+        <a href="#about"><img width="120px" height="50px" src="icon2.png"></a>
+      </div>
+  
+      <!-- Navbar Links -->
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li><!--
+        --><li><a href="about.html">About</a></li><!--
+        --><li><a href="reviews.html">Reviews</a></li><!--
+        --><li><a href="videos.html">Videos</a></li>
+           <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  
+  
+  <div class="overlay-menu">
+    <ul id="menu">
+      <li><a href="index.html">Home</a></li><!--
+      --><li><a href="about.html">About</a></li><!--
+      --><li><a href="reviews.html">Reviews</a></li><!--
+      --><li><a href="videos.html">Videos</a></li>
+         <li><a href="contact.html">Contact</a></li>
+      </ul>
+  </div>
+  
+    <div class= "top">   Here's a little bit about us  </strong></div>
+
+    <div class="centered">Methods is a band which pioneers in the art of entertainment
+       through engaging the audience by a variety of musical performances. 
+     <br> In every event, we strive to provide the best live musical performances through our creativity, dynamic energy, inclusivity, and aim for perfection. </br>
+     <br> Methods is a result of the dedication, hard work and passion each one of us has towards music and for entertainment along with the combination of </br> following our dream of doing what we love to give the best to our audience 
+      and redefining the live entertainment industry.  </br>
+     <br> Each one of us brings a unique aspect to the band which blends to create quality entertainment and appeals to the younger and older generations alike, 
+    </br>be it dancing the night away or soothing their hearts with our captivating  performances. </br>
+      <br>We are performers with over 5 years of experience and having done more than 500 performances in Sri Lanka.</br>
+      Our performances range a span of events which include corporate events,weddings, festivals, band competitions, tv and online shows and other special events.</br>
+  </div>
+  
+  
+  <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      slides[slideIndex-1].style.display = "block";  
+      setTimeout(showSlides, 3000); // Change image every 2 seconds
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap" rel="stylesheet">
+
+<script src="functions.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css" media="all">
+
+</head>
+<body>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="index/1.JPG" style="width:90%">
+      <div class="slider-text">
+        <p><strong>SRIMAL FERNANDO </strong></br>
+        (SIRI)<br>
+      Lead vocalist/ Front-man</p>
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="index/2.JPG" style="width:90%">
+      <div class="slider-text">
+        <p><strong>DEEMANTHA SAMARATHUNGA </strong></br>
+        (KOTA)<br>
+      Bassist/ Vocalist</p>
+      </div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="index/3.JPG" style="width:90%">
+      <div class="slider-text">
+        <p><strong> MADHUKA DIAS</strong></br>
+        (MAD)<br>
+      Lead guitarist</p>
+      </div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="index/4.JPG" style="width: 90%">
+      <div class="slider-text">
+        <p><strong>NIMESH FERNANDO </strong></br>
+        (NIMMA)<br>
+      Keyboardist/ Vocalist</p>
+      </div>
+    </div>
+    
+    
+
+    <div class="mySlides fade">
+      <img src="index/5.JPG" style="width:90%">
+      <div class="slider-text">
+        <p><strong>CHANITHA DEHIGAHAWATTA </strong></br>
+        (CHANIYA)<br>
+      Rhythm guitarist/ vocalist</p>
+      </div>
+  
+    </div>
+
+    <div class="mySlides fade">
+      <img src="index/6.JPG" style="width:90%">
+      <div class="slider-text">
+        <p><strong>NIRODHA FERNANDO </strong></br>
+        (DIGA)<br>
+      Drums</p>
+      </div>
+    </div>
+
+  </div>
+  <nav id="navbar" class="">
+    <div class="nav-wrapper">
+      <!-- Navbar Logo -->
+      <div class="logo">
+        <!-- Logo Placeholder for Illustration -->
+        <a href="#index"><img width="120px" height="50px" src="icon2.png"></a>
+      </div>
+  
+      <!-- Navbar Links -->
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li><!--
+        --><li><a href="about.html">About</a></li><!--
+        --><li><a href="reviews.html">Reviews</a></li><!--
+        --><li><a href="videos.html">Videos</a></li>
+           <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  
+  
+  <div class="overlay-menu">
+    <ul id="menu">
+      <li><a href="index.html">Home</a></li><!--
+      --><li><a href="about.html">About</a></li><!--
+      --><li><a href="reviews.html">Reviews</a></li><!--
+      --><li><a href="videos.html">Videos</a></li>
+         <li><a href="contact.html">Contact</a></li>
+      </ul>
+  </div>
+  
+  <div class= "topi">   The <strong> BAND  </strong></div>
+  
+  
+  <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      slides[slideIndex-1].style.display = "block";  
+      setTimeout(showSlides, 4000); // Change image every 4 seconds
+    }
+  </script>
+</body>
+</html>
