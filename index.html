@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="title" content="Methods live band">
+<meta name="description" content="Methods is a band which pioneers in the art of entertainment through engaging the audience by a variety of musical performances. ">
+<meta name="keywords" content="the best band in Sri Lanka, band in Sri Lanka, band in Colombo, wedding band, band for occasions, Srimal Fernando, Nirodha Fernando, Deemantha Samarathunga, Madhuka Dias, Nimesh Fernando, entertainment, performance, music, colombo wedding">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+
+<meta property="og:title" content="Methods Live Band">
+<meta property="og:site_name" content="Methods Live Band">
+<meta property="og:url" content="https://methods.lk/">
+<meta property="og:description" content="">
+<meta property="og:type" content="music.musician">
+<meta property="og:image" content="https://methods.lk/Methods Logo Red BG.png">
+
+<head>
+  <title>Methods live band</title>
+  <!-- <link rel="icon" type="image/x-icon" href="Methods Logo Red BG.png"> -->
+</head>
 <style>
 body, html {
   height: 100%;
@@ -48,9 +66,42 @@ hr {
   <div class="middle">
     <p><img src="logo-big.png" alt="band logo" width="250px" height="60px"></p>
     <h1>COMING SOON</h1>
+    <p id="demo"></p>
      <hr>
   </div>
 </div>
+
+<script>
+  // Set the date we're counting down to
+  var countDownDate = new Date("July 8, 2023 17:00:00").getTime();
+  
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+  
+    // Get today's date and time
+    var now = new Date().getTime();
+      
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+      
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+      
+    // If the count down is over, write some text 
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+</script>
+  
 
 </body>
 </html>
